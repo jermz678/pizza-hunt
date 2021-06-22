@@ -3,7 +3,7 @@ const { get } = require('../html/html-routes');
 const router = require('express').Router();
 
 const {
-    getAllPizza,
+    getAllPizzas,
     getPizzaById,
     createPizza,
     updatePizza,
@@ -12,7 +12,7 @@ const {
 
 router  
     .route('/')
-    .get(getAllPizza)
+    .get(getAllPizzas)
     .post(createPizza);
 
 router
